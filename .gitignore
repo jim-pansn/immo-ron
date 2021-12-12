@@ -1,0 +1,5 @@
+__pycache__/
+env/
+.env
+seen_posts.txt
+.DS_Store
