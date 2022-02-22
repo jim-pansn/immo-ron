@@ -39,7 +39,7 @@ class MailNotificationPipeline:
         and (post["city"] == "zuerich")
         and (post["price"] <= 3000)
         and (post["limited"] != "Y")
-        # and (post["zip_code"] in [8001, 8002, 8003, 8004, 8005, 8006, 8037, 8032, 8008])
+        and (post["zip_code"] in [8001, 8002, 8003, 8004, 8005, 8006, 8037, 8032, 8008])
         and not self._already_seen(post)
         )
 
