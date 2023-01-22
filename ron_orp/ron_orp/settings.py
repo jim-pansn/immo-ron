@@ -96,5 +96,4 @@ MAIL_PASS = os.environ['MAIL_PASS']
 MAIL_USER = os.environ['MAIL_USER']
 MAIL_TLS = os.environ['MAIL_TLS']
 MAIL_SSL = os.environ['MAIL_SSL']
-
 MAIL_TO = os.environ['MAIL_TO']

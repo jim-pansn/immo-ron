@@ -3,3 +3,5 @@ env/
 .env
 seen_posts.txt
 .DS_Store
+example-env.list
+.idea
