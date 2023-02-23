@@ -41,7 +41,7 @@ class ImmoSpider(scrapy.Spider):
         total_pages = int(data["pagesArray"]["pages_count"])
         ts = datetime.fromtimestamp(int(data["result"][0]["showed_date"]))
 
-        # only look at posts from the last three days
+        # only look at posts from the last 7 days
         if self.page < total_pages and ts.date() >= date.today() - timedelta(days=7):
             self.page += 1
             url_with_hash = self.URL + f"?page={self.page}&hash={self.hash}"
